@@ -1,0 +1,41 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url(math.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: arial, sans-serif;
+}
+#title{
+	padding: 10px;
+	font-size: 30px;
+}
+.container{
+	height: 350px;
+	width: 370px;
+	padding: 15px;
+	margin: auto;
+	margin-top: 150px;
+	background-color: #000;
+	border-radius: 12px;
+}
+.text{
+	margin: 5px;
+	width: 332px;
+	height: 40px;
+	font-size: 30px;
+	border-radius: 20px;
+}
+.button{
+	margin: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	width: 80px;
+	height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 20px;
+}

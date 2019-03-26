@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Calculator</title>
+	<link rel="icon" type="image/png" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div class="container">
+		<h3 id="title">My First Calculator</h3>
+		<form name="form">
+			<input type="text" name="textview" id="textView" class="text" value=" ">
+		</form>
+		<input class="button" type="button" value="C" onclick="clr()">
+		<input class="button" type="button" value="Del" onclick="del()">
+		<input class="button" type="button" value="%" onclick="printHistory('%')">
+		<input class="button" type="button" value="/" onclick="printHistory('/')"><br>
+
+		<input class="button" type="button" value="7" onclick="printHistory('7')">
+		<input class="button" type="button" value="8" onclick="printHistory('8')">
+		<input class="button" type="button" value="9" onclick="printHistory('9')">
+		<input class="button" type="button" value="*" onclick="printHistory('*')"><br>
+
+		<input class="button" type="button" value="4" onclick="printHistory('4')">
+		<input class="button" type="button" value="5" onclick="printHistory('5')">
+		<input class="button" type="button" value="6" onclick="printHistory('6')">
+		<input class="button" type="button" value="-" onclick="printHistory('-')"><br>
+
+		<input class="button" type="button" value="1" onclick="printHistory('1')">
+		<input class="button" type="button" value="2" onclick="printHistory('2')">
+		<input class="button" type="button" value="3" onclick="printHistory('3')">
+		<input class="button" type="button" value="+" onclick="printHistory('+')"><br>
+
+		<input class="button" type="button" value="0" onclick="printHistory('0')">
+		<input class="button" type="button" value="." onclick="printHistory('.')">
+		<input class="button" type="button" value="=" onclick="solve()">
+	</div>
+	<script type="text/javascript">
+ 		function printHistory(num){
+ 			//alert(num);
+			//document.getElementById("textView").value += num;
+			document.form.textview.value += num;	
+		}
+		function clr(){
+			document.getElementById("textView").value = " "
+			//document.getElementById("textView").value = "";
+		}
+		function solve(){
+			let x = document.getElementById("textView").value;
+			let y = eval(x);
+			document.getElementById("textView").value = " " + y
+		}
+		function del(){
+			alert('have\'nt created this yet')
+		}
+
+	</script>	
+</body>
+</html>
